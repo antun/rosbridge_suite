@@ -4,6 +4,7 @@ project(rosbridge_server)
 find_package(ament_cmake_ros REQUIRED)
 find_package(ament_cmake_core REQUIRED)
 find_package(ament_cmake_python REQUIRED)
+find_package(catkin REQUIRED COMPONENTS rosbridge_library rosapi rospy rosauth)
 
 ament_python_install_package(
   ${PROJECT_NAME} PACKAGE_DIR "src/${PROJECT_NAME}")
